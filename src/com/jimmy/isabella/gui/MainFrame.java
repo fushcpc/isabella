@@ -14,6 +14,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 import com.jimmy.guiutility.component.NumberLabel;
+import com.jimmy.guiutility.component.SoundUtility;
 
 public class MainFrame {
     private JPanel centerPanel;
@@ -84,6 +85,7 @@ public class MainFrame {
                             }
                         }
                         startBtn.setEnabled(true);
+                        SoundUtility.playSound("resource/PomodoroDone.wav");
                     }
                 });
             }
